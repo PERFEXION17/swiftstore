@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  --bg-main: #121212;
+  --bg-card: hsl(210, 15%, 20%);
+  --bg-sec: #f8f9fa;
+  --font-main: "Playfair Display", serif;
+  --font-sec: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-main);
+  color: var(--bg-sec);
+  font-family: var(--font-sec);
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  flex: 1;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background: var(--bg-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 20px rgba(255, 255, 255, 0.3);
+  z-index: 100;
+}
+
+.brand-logo {
+  width: 150px;
+}
+
+.trust-banner {
+  background-color: var(--bg-card);
+  color: var(--bg-sec);
+  text-align: center;
+  padding: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 20px 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  overflow: hidden;
+}
+
+.image-placeholder {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-sec);
+  aspect-ratio: 1 / 1;
+}
+
+.product-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-title {
+  margin-bottom: 5px;
+  color: var(--bg-sec);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-price {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--bg-sec);
+}
+
+.buy-btn {
+  margin-top: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #25d366; /* Official WhatsApp Green */
+  color: var(--bg-sec);
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-btn i{
+    font-size: 1.7rem;
+}
+
+.buy-btn:active {
+  background-color: #1da851;
+}
+
+footer p {
+    margin: 10px 0;
+  width: 100%;
+  font-size: .7rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* Desktop Scale-up */
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+}
