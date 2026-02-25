@@ -14,7 +14,7 @@ Traditional e-commerce templates require complex setups (databases, payment gate
 * **Instant Load Times:** Stripped of heavy frameworks and unnecessary DOM elements to ensure instant loading, even on 3G networks.
 * **Dynamic Rendering:** Products are isolated in a clean `products.js` module, allowing for rapid inventory updates without touching the core HTML layout.
 
-## 🛠️ Tech Stack
+## Tech Stack
 * **HTML5:** Semantic, accessible structure.
 * **CSS3:** Custom CSS Grid architecture, CSS Variables, and responsive media queries.
 * **Vanilla JavaScript (ES6+):** Module-based logic, DOM manipulation, and URL encoding for the WhatsApp API.
@@ -23,4 +23,4 @@ Traditional e-commerce templates require complex setups (databases, payment gate
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/yourusername/swiftstore.git](https://github.com/yourusername/swiftstore.git)
+   git clone [https://github.com/PERFEXION17/swiftstore.git](https://github.com/PERFEXION17/swiftstore.git)
